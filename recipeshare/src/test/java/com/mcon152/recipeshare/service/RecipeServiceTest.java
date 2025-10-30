@@ -301,6 +301,7 @@ class RecipeServiceTest {
             // provide partial with only title set
             // repository.save returns the modified entity (use thenAnswer echo)
             // verify save(argThat(...)) to ensure unchanged fields remain as-is
+
             Recipe existing = savedRecipe(1L);
             Recipe partial =  new Recipe();
             partial.setTitle("Brownies");
